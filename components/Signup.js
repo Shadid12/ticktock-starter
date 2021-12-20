@@ -20,15 +20,7 @@ export default function Signup({ showModal = false, closeModal, openLogin }) {
 
 	const doSignup = e => {
     e.preventDefault(); 
-    Cookie.remove('fauna-session')
-		console.log(state)
-    signupUserFunc({
-      variables: {
-        ...state,
-      },
-    }).catch(err => {
-			console.log(err)
-		})
+		alert('TODO: signup user')
   }
 
 	return (
@@ -85,7 +77,7 @@ export default function Signup({ showModal = false, closeModal, openLogin }) {
 							</div>
               <button 
                 className="button is-light"
-                openLogin={openLogin}
+                openlogin={openLogin}
                 onClick={e => {
 									e.preventDefault()
 									openLogin()
